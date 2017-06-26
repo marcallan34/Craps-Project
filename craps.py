@@ -20,7 +20,6 @@ def comeout_roll():
         bankroll = bankroll + pass_line_bet
     else:
         point.append(result)
-        #for some reason the point is not getting asigned the result number
         print ('The point is:')
         print(result)
 def point_on_roll():
@@ -32,7 +31,6 @@ def point_on_roll():
         print('7 out!')
         bankroll = bankroll - pass_line_bet
     elif result in point:
-        #'UnboundLocalErrorL local variable 'point' referenced before assignment
         print('The roller has made the point! pay the line!')
         bankroll = bankroll + pass_line_bet
         point = []
